@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch CIPHER System",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js", 
+            "env": {
+                "NODE_ENV": "development",
+                "SESSION_SECRET": "local_test_secret_123",
+                "ADMIN_PASS": "stc_admin_test",
+                "DATABASE_URL": "mysql://root:password@localhost:3306/cipher_db"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}

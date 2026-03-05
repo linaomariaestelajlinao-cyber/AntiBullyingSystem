@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone | Anti-Bullying System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Shield<strong>Link</strong></div>
+        <ul>
+            <li><a href="#about">The Study</a></li>
+            <li><a href="#system">The System</a></li>
+            <li><a href="https://school-portal.edu/guidance" target="_blank">Guidance Office</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="tag">Capstone Project 2026</span>
+            <h1>Development of a Digital Anonymous Anti-Bullying Reporting System</h1>
+            <p>Empowering Senior High School students through secure, private, and immediate reporting channels.</p>
+            <a href="#system" class="btn-primary">Try the Prototype</a>
+        </div>
+    </header>
+
+    <section id="system" class="report-section">
+        <div class="card">
+            <h2>Anonymous Report Form</h2>
+            <p class="disclaimer">Your identity is protected by 256-bit encryption. No IP addresses are logged.</p>
+            <form id="bullyingReport">
+                <label>Incident Type</label>
+                <select id="type">
+                    <option>Cyberbullying</option>
+                    <option>Verbal Harassment</option>
+                    <option>Physical Bullying</option>
+                    <option>Exclusion/Social</option>
+                </select>
+
+                <label>Description of Incident</label>
+                <textarea placeholder="Tell us what happened..."></textarea>
+                
+                <button type="button" onclick="submitReport()">Submit Secure Report</button>
+            </form>
+            <div id="confirmation" class="hidden">Report Sent Successfully. Your Ticket ID: #SHS-9921</div>
+        </div>
+    </section>
+
+    <section id="about" class="research-grid">
+        <div class="research-box">
+            <h3>Problem Statement</h3>
+            <p>Traditional reporting often leads to fear of retaliation. This study explores how digital anonymity increases reporting rates among SHS students.</p>
+        </div>
+        <div class="research-box">
+            <h3>Methodology</h3>
+            <p>Development using the SDLC (Software Development Life Cycle) model, specifically focusing on the Agile framework.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
